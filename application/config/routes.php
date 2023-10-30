@@ -8,6 +8,9 @@ $route['translate_uri_dashes'] = FALSE;
 // Restful API Paket
 $route['paket'] = 'api/PaketController/index';
 
+// Restful API User
+$route['user'] = 'api/UserController/index';
+
 // Auth
 $route['login'] = 'auth/LoginController/index';
 

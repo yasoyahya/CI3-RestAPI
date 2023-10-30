@@ -7,7 +7,6 @@ class Paket extends CI_Model
     public function getData($id=null)
     {
         if ($id==null) {
-            # code...
             return $this->db->get($this->paket)->result_array();
         } else {
             return $this->db->get_where($this->paket,['id' => $id])->result_array();

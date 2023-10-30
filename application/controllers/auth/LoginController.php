@@ -33,7 +33,7 @@ class LoginController extends RestController
                 'name' => $user[0]->name,
                 'username' => $user[0]->username,
                 'iat' => $date->getTimestamp(), // created_at
-                'exp' => $date->getTimestamp()+(60*300), // token 3 menit
+                'exp' => $date->getTimestamp()+(60*300), // token 300 menit
             ];
             $token = JWT::encode($payload, $this->key, 'HS256');
             $this->response([
